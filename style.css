@@ -124,7 +124,7 @@ body{
 	z-index: -1;
 }
 
-@media (max-width: 1250px){
+@media (min-width: 1250px){
 	#profile-img{
 		width: 25em;
 		right: 0;
@@ -134,7 +134,7 @@ body{
 
 
 }
-@media  (max-width: 1000px){
+@media  (min-width: 1000px){
 	body{
 		font-size: 14px;
 	}
@@ -201,21 +201,21 @@ body{
 
 }
 
-@media  (max-width: 900px){
+@media  (min-width: 900px){
 	
 	#profile-img{
 		width: 30em;
 	}
 
 }
-@media  (max-width: 600px){
+@media  (min-width: 600px){
 	
 	#profile-img{
 		width: 22em;
 	}
 
 }
-@media  (max-width: 400px){
+@media  (min-width: 400px){
 	body{
 		font-size: 10px;
 
