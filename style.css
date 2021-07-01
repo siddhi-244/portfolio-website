@@ -124,7 +124,7 @@ body{
 	z-index: -1;
 }
 
-@media only screen and (min-width: 1250px){
+@media only screen and (max-width: 1250px) and (min-width: 1000px){
 	#profile-img{
 		width: 25em;
 		right: 0;
@@ -134,7 +134,7 @@ body{
 
 
 }
-@media only screen and  (max-width: 1000px){
+@media only screen and  (max-width: 1000px) and (min-width:900px){
 	body{
 		font-size: 14px;
 	}
@@ -201,14 +201,14 @@ body{
 
 }
 
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 900px) and (min-width:600px){
 	
 	#profile-img{
 		width: 30em;
 	}
 
 }
-@media only screen and   (max-width: 600px){
+@media only screen and   (max-width: 600px) and (min-width:400px){
 	
 	#profile-img{
 		width: 22em;
