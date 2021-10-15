@@ -401,6 +401,11 @@ img{
 .skills__open .skills__arrow{
 	transform: rotate(-180deg);
 }
+.qualification__tabs{
+	display: flex;
+	justify-content: space-evenly;
+	margin-bottom: var(--mb-2);
+}
 
 
 
