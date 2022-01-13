@@ -5,6 +5,10 @@
     <meta content="width=device-width,initial-scale=1" name="viewport"/>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header class="header" id="header">
@@ -28,13 +32,13 @@
               </a>
             </li>
             <li class="nav__item">
-              <a href="#portfolio" class="nav__link">
-                <i class="uil uil-suitcase  nav__icon"></i>PORTFOLIO
+              <a href="#qualification" class="nav__link">
+                <i class="uil uil-graduation-cap nav__icon"></i>QUALIFICATIONS
               </a>
             </li>
             <li class="nav__item">
-              <a href="#contact" class="nav__link">
-                <i class="uil uil-comment-alt nav__icon"></i>CONTACT ME
+              <a href="#portfolio" class="nav__link">
+                <i class="uil uil-comment-alt nav__icon"></i>PORTFOLIO
               </a>
             </li>
             <li class="nav__item">
@@ -48,6 +52,8 @@
         <div class="nav__btns">
           <div class="nav__toggle" id="nav-toggle">
             <i class="uil uil-apps"></i>
+          </div>
+        </div>
       </nav>
     </header>
     <!-- home -->
@@ -269,7 +275,7 @@
           </div>
       </div>
     </section>
-    <section class="qualification section">
+    <section class="qualification section" id="qualification">
       <h2 class="section_title">Qualification</h2>
       <span class="section_subtitle">My journey</span>
       <div class="qualification__container container">
@@ -390,7 +396,36 @@
         </div>
       </div>
     </section>
-
+    <section class="portfolio section" id="portfolio">
+      <h2 class="section_title">Portfolio</h2>
+      <span class="section_subtitle">My projects</span>
+      <div class="portfolio__container container swiper">
+        <div class="swiper-wrapper">
+          <div class="portfolio__content grid swiper-slide">
+            <img src="images/pro1.png" class="portfolio__img">
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">LinkTree Clone</h3>
+              <p class="portfolio__description">
+                A simple LinkTree Clone using html,css only. </p>
+                <a class="button button--flex button--small portfolio__button">Demo<i class="uil uil-eye button__icon"></i></a>
+            </div>
+          </div>
+          <div class="portfolio__content grid swiper-slide">
+            <img src="images/pro2.png" class="portfolio__img">
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">FindMe</h3>
+              <p class="portfolio__description">
+                A Github User Finder </p>
+                <a class="button button--flex button--small portfolio__button">Demo<i class="uil uil-eye button__icon"></i></a>
+            </div>
+          </div>
+        </div> 
+        <div class="swiper-button-next"><i class="uil uil-angle-right-b swiper-portfolio-icon"></i></div>
+        <div class="swiper-button-prev"><i class="uil uil-angle-left swiper-portfolio-icon"></i></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="app.js"></script>  
   </body>
 </html>
