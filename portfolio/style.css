@@ -143,7 +143,7 @@ img{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-
+	margin-top: 10px;
 }
 .nav__logo,
 .nav__toggle{
@@ -210,7 +210,7 @@ img{
 	bottom: 0;
 }
 .home__container{
-	gap:1rem;
+	gap: 1rem;
 }
 .home__content{
 	grid-template-columns: .5fr 3fr;
@@ -322,9 +322,9 @@ img{
 	display: flex;
 	justify-content: center;	
 }
-.skills__container{
+/* .skills__container{
 	row-gap:0;
-}
+} */
 .skills__header{
 	display: flex;
 	align-items: center;
@@ -378,6 +378,9 @@ img{
 	width: 70%;
 }
 .skills__js{
+	width: 70%;
+}
+.skills__react{
 	width: 50%;
 }
 .skills__node{
@@ -386,8 +389,11 @@ img{
 .skills__express{
 	width: 60%;
 }
-.skills__mongo{
+.skills__java{
 	width: 50%;
+}
+.skills__sql{
+	width:90%;
 }
 .skills__git{
 	width: 80%;
@@ -397,6 +403,9 @@ img{
 }
 .skills__python{
 	width: 60%;
+}
+.skills__api{
+	width: 70%;
 }
 .skills__list{
 	row-gap:1.5rem;
@@ -473,6 +482,7 @@ img{
 }
 .portfolio__container{
 	overflow: initial;
+	align-items: center;
 }
 .portfolio__content{
 	padding: 0 1.5rem;
@@ -492,6 +502,15 @@ img{
 .portfolio__button:hover .button__icon{
 	transform: translateX(.25rem); 
 
+}
+.portfolio__data{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.port__img{
+	display: flex;
+    justify-content: center;
 }
 .swiper-button-prev::after,
 .swiper-button-next::after{
@@ -591,6 +610,9 @@ img{
 .footer__social{
 	color: #fff;
 
+}
+.footer__gap{
+	margin-bottom: 23px;
 }
 .active-link{
 	color: var(--first-color);
@@ -694,6 +716,7 @@ img{
 		order: 1;
 		justify-self: center;
 	}
+	.about__container,
 	.skills__container,
 	.portfolio__container
 	{
@@ -701,6 +724,7 @@ img{
 
 	}
 	.about__container,
+	.skills__container,
 	.qualification__sections{
 		display: grid;
 		grid-template-columns: .6fr;
@@ -784,7 +808,37 @@ img{
 		justify-content: initial;
 	}
 
-	.qualification__tabs{}
+	.qualification__tabs{
+		justify-content: center;
+	}
+	.qualification__button{
+		margin: 0 var(--mb-1) ;
+	}
+	.qualification__sections{
+		grid-template-columns: .5fr;
+	}
+	.portfolio__img{
+		width: 320px;
+	}
+	.portfolio__content{
+		align-items: center;
+	}
+	.footer__container{
+		grid-template-columns: repeat(2,1fr);
+	}
+	.footer__bg{
+		padding: 3rem 0 3.5rem;
+	}
+	.footer__link{
+		flex-direction: row;
+		column-gap: 2rem;
+	}
+	.footer__social{
+		justify-self: flex-end;
+	}
+	.footer__copy{
+		margin-top: 4.5rem;
+	}
 }
 
 
